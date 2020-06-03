@@ -40,7 +40,7 @@ namespace Gefangenendilemma
         /// <param name="schwere">Schwere des Verbrechen (VLeicht = 0, VMittel = 1, VSchwer = 2)</param>
         public override void Start(int runde, int schwere)
         {
-            schwere = 0;
+            this.schwere = schwere;
         }
 
         /// <summary>

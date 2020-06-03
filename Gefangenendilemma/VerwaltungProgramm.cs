@@ -132,6 +132,7 @@ namespace Gefangenendilemma
             {
                 Console.WriteLine("Somit hat {0} gewonnen.", strategie2.Name());
             }
+            Console.WriteLine();
             
         }
 
