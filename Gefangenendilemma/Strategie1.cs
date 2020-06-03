@@ -19,7 +19,7 @@ namespace Gefangenendilemma
         /// <returns></returns>
         public override string Name()
         {
-            return "Bitte anpassen";
+            return "Anna Strategie";
         }
 
         /// <summary>
@@ -28,7 +28,7 @@ namespace Gefangenendilemma
         /// <returns></returns>
         public override string Autor()
         {
-            return "Bitte anpassen";
+            return "Anna Strategie";
         }
 
         /// <summary>
