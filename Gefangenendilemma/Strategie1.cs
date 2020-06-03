@@ -19,7 +19,7 @@ namespace Gefangenendilemma
         /// <returns></returns>
         public override string Name()
         {
-            return "Phuong Anh Strategie";
+            return "Anna Strategie";
         }
 
         /// <summary>
