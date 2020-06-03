@@ -1,3 +1,4 @@
+using System;
 using Gefangenendilemma.Basis;
 
 namespace Gefangenendilemma
@@ -17,6 +18,7 @@ namespace Gefangenendilemma
         /// Gibt den Namen der Strategie zurück, wichtig zum Anzeigen für die Auswahl
         /// </summary>
         /// <returns></returns>
+        private int schwere;
         public override string Name()
         {
             return "Anna Strategie";
@@ -28,7 +30,7 @@ namespace Gefangenendilemma
         /// <returns></returns>
         public override string Autor()
         {
-            return "Anna Strategie";
+            return "Phuong Anh Nhu";
         }
 
         /// <summary>
@@ -38,7 +40,7 @@ namespace Gefangenendilemma
         /// <param name="schwere">Schwere des Verbrechen (VLeicht = 0, VMittel = 1, VSchwer = 2)</param>
         public override void Start(int runde, int schwere)
         {
-            //Vorbereitungen für Start
+            schwere = 0;
         }
 
         /// <summary>
@@ -49,8 +51,12 @@ namespace Gefangenendilemma
         public override int Verhoer(int letzteReaktion)
         {
             //Strategie hier ergänzen
-
-            return Verrat;
+            if (schwere != 1){
+                return Verrat;
+            }
+            else{
+                return Kooperieren;
+            }
         }
     }
 }
