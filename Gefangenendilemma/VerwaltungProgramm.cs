@@ -201,14 +201,14 @@ namespace Gefangenendilemma
             } 
             if (aktReaktion1 == BasisStrategie.Verrat && aktReaktion2 == BasisStrategie.Kooperieren)
             {
-                punkte1 += 0;
-                punkte2 += 8;
+                punkte1 += 8;
+                punkte2 += 0;
                 return;
             }
             if (aktReaktion1 == BasisStrategie.Kooperieren && aktReaktion2 == BasisStrategie.Verrat)
             {
-                punkte1 += 8;
-                punkte2 += 0;
+                punkte1 += 0;
+                punkte2 += 8;
                 return;
             }
             
