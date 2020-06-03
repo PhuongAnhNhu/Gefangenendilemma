@@ -68,7 +68,7 @@ namespace Gefangenendilemma
             st1 = VerwaltungKram.EingabeZahlMinMax("Wählen Sie die 1. Strategie", 0, _strategien.Count);
             st2 = VerwaltungKram.EingabeZahlMinMax("Wählen Sie die 2. Strategie", 0, _strategien.Count);
             runde = VerwaltungKram.EingabeZahlMinMax("Wie viele Runden sollen diese verhört werden?", 1, 101);
-            schwere = VerwaltungKram.EingabeZahlMinMax("Wie schwer sind die Verstöße? (2=schwer)", 0,3);
+            schwere = VerwaltungKram.EingabeZahlMinMax("Wie schwer sind die Verstöße? (0 = leicht, 1 = mittel schwer, 2=schwer)", 0,3);
             
             Verhoer(st1, st2, runde, schwere);
         }
