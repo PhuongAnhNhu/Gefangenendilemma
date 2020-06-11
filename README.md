@@ -4,7 +4,7 @@ Gruppe 18: Phuong Anh Nhu, Sophia Kühne
 
 # Gefangenendilemma
 
-#### Phuong Anh Nhu 
+#### Phuong Anh Nhu S1, B1, B2, P1, E1, R1
 ## S1: Annas Strategie 
 Die Strategie besteht darin die wenigste Punktzahl zu erreichen. Durch die vorgegebenen Tabellen kann man bei bestimmten Entscheidungen maximal unentschieden ausgehen und nicht verlieren.  
 
