@@ -52,17 +52,24 @@ namespace Gefangenendilemma
         /// <returns>Gibt die eigene Reaktion für diese Runde zurück (Kooperieren = 0, Verrat = 1)</returns>
         public override int Verhoer(int letzteReaktion)
         {
+            int ergebnis = Verrat;
+
             switch (schwere)
             {
                 case 0:
-                    return Verrat;
+                    ergebnis = Verrat;
+                    break;
                 case 1:
-                    return ersteRunde ? Verrat : Kooperieren;          
+                    ergebnis = ersteRunde ? Verrat : Kooperieren;    
+                    ersteRunde = false;      
+                    break;
                 case 2:
-                    return Verrat;
+                    ergebnis = Verrat;
+                    break;
                 default:
-                    return -1;
+                    break;
             }
+            return ergebnis;
         }
     }
 }

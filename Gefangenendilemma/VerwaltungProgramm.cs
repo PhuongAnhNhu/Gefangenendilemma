@@ -23,6 +23,7 @@ namespace Gefangenendilemma
             _strategien.Add(new Strategie1());
             _strategien.Add(new Strategie2());
             _strategien.Add(new Strategie3());
+            _strategien.Add(new AntiGroll());
             
             string eingabe;
             do
@@ -168,7 +169,7 @@ namespace Gefangenendilemma
             punkte2 += 8;
             
         }
-        // E1 
+        // E1  Anna 
         static void VerhoerLeichtenPunkte(int aktReaktion1, int aktReaktion2, ref int punkte1, ref int punkte2){
             if (aktReaktion1 == BasisStrategie.Kooperieren && aktReaktion2 == BasisStrategie.Kooperieren)
             {
